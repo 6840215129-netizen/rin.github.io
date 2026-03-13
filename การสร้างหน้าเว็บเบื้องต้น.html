@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>เว็บไซต์เพลงที่ชอบของฉัน</title>
+
+    <style>
+        body{
+            background-color: ##778899;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1{
+            color: darkblue;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        ul{
+            list-style-type: square;
+            width: 200px;
+            margin: auto;
+            text-align: left;
+        }
+
+        img{
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        button{
+            padding: 8px 15px;
+            margin-top: 10px;
+        }
+    </style>
+
+    <script>
+        function showWelcome(){
+            alert("ยินดีต้อนรับสู่เพลงที่ชอบของฉัน");
+        }
+
+        function greetUser(){
+            let name = document.getElementById("username").value;
+            document.getElementById("result").innerHTML =
+            "สวัสดี " + name + " ยินดีต้อนรับ";
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>เว็บไซต์เพลงที่ชอบของฉัน</h1>
+
+    <img src="https://png.pngtree.com/thumb_back/fh260/background/20221116/pngtree-lonely-bench-sorrow-hopelessness-hole-photo-image_20523794.jpg" alt="ภาพตัวอย่าง">
+
+    <p>
+        เว็บไซต์นี้แนะนำเพลงและข้อมูลที่น่าสนใจ
+    </p>
+
+    <h3>หัวข้อในเว็บไซต์</h3>
+    <ul>
+        <li>เพลงความหมายดีๆ</li>
+        <li>บรรยากาศดีๆ</li>
+        <li>ภาพและเสียงที่ดูสงบ</li>
+    </ul>
+
+    <p>
+        เยี่ยมชมเว็บไซต์เพิ่มเติมได้ที่
+        <a href="https://youtu.be/eJnQBXmZ7Ek?si=b9spCuhDGceIriSw" target="_blank"Youtube</a>
+    </p>
+
+    <hr>
+
+    <h3>ทดลอง JavaScript</h3>
+
+    <button onclick="showWelcome()">แสดงข้อความต้อนรับ</button>
+
+    <br><br>
+
+    <input type="text" id="username" placeholder="กรอกชื่อของคุณ">
+    <button onclick="greetUser()">ทักทาย</button>
+
+    <p id="result"></p>
+
+</body>
+</html>
